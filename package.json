@@ -5,9 +5,9 @@
   "main": "src/server.ts",
   "scripts": {
     "test": "./node_modules/.bin/_mocha",
-    "build": "node build/client_build.js",
+    "build": "tsc",
     "build:w": "tsc -w",
-    "start": "tsc && node dist/server.js",
+    "start": "node dist/server.js",
     "start-artillery": "node tests/artillery/index.js"
   },
   "repository": {
