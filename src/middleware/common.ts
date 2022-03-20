@@ -17,7 +17,7 @@ export default function CommonMiddleware(app: Express): void {
   app.use(express.urlencoded({ limit: "15mb", extended: true }));
   app.use(
     cors({
-      origin: "http://localhost:3000",
+      origin: "*",
       methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
       credentials: true,
     })
