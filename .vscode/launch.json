@@ -1,0 +1,125 @@
+{
+  // Use IntelliSense to learn about possible Node.js debug attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Start Backend App",
+      "program": "${workspaceFolder}/dist/server.js",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "env": {
+        "BUILD_CLIENT": "1",
+        "REACT_CLIENT_BRANCH": "master",
+        "CLIENT_GITHUB_TOKEN": "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",
+        "ACCESS_KEY_ID": "AKIAV4FP3A4I2VNGBXQ3",
+        "SECRET_ACCESS_KEY": "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",
+        "REGION": "ap-south-1",
+        "MONGO_USER": "yash",
+        "MONGO_PASSWORD": "kakuyash9988",
+        "DB_NAME": "CS_BackEndApiAdmin",
+        "GOOGLE_CLIENT_ID": "189188116379-vhfqsa0205jjgh41cdm01f9f9n69isb9.apps.googleusercontent.com",
+        "GOOGLE_CLIENT_SECRET": "Vc7cjW1qKxSw_qIgR9UiRTF7",
+        "JWT_SECRET": "yash",
+        "MONGO_URI_PROD": "mongodb+srv://shoshin-test1:shoshin-test1@shoshintest.seuv6.mongodb.net/shoshin-test1?retryWrites=true&w=majority",
+        "MONGO_URI": "mongodb+srv://yash:kakuyash9988@cluster0.qkwlb.mongodb.net/CS_BackEndApiAdmin?retryWrites=true&w=majority",
+        "PORT": "5000",
+        "NODE_ENV": "dev",
+        "CLOUDAMQP_URL": "amqp://shoshinrmq:shoshinrmq@3.109.8.178"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch",
+      "program": "${workspaceFolder}/dist/index.js",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "env": {}
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Start Queue Worker",
+      "program": "${workspaceRoot}/dist/queueWorker/index.js",
+      "env": {
+        "HEROKU_APP_NAME": "local_machine",
+        "IGNORE_THRONG": "*",
+        "ACCESS_KEY_ID": "AKIAV4FP3A4I2VNGBXQ3",
+        "SECRET_ACCESS_KEY": "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",
+        "REGION": "ap-south-1",
+        "MONGO_USER": "yash",
+        "MONGO_PASSWORD": "kakuyash9988",
+        "DB_NAME": "CS_BackEndApiAdmin",
+        "GOOGLE_CLIENT_ID": "189188116379-vhfqsa0205jjgh41cdm01f9f9n69isb9.apps.googleusercontent.com",
+        "GOOGLE_CLIENT_SECRET": "Vc7cjW1qKxSw_qIgR9UiRTF7",
+        "JWT_SECRET": "yash",
+        "MONGO_URI_PROD": "mongodb+srv://shoshin-test1:shoshin-test1@shoshintest.seuv6.mongodb.net/shoshin-test1?retryWrites=true&w=majority",
+        "MONGO_URI": "mongodb+srv://yash:kakuyash9988@cluster0.qkwlb.mongodb.net/CS_BackEndApiAdmin?retryWrites=true&w=majority",
+        "NODE_ENV": "dev",
+        // "ENABLE_LOGGING": "*",
+        // "CLOUDAMQP_LOGGER_URL": "amqp://bgaqcavr:Oh6VbhJ93-Nfxcam1UNFL99U5bf7Aq-6@shrimp.rmq.cloudamqp.com/bgaqcavr"
+        "CLOUDAMQP_URL": "amqp://shoshinrmq:shoshinrmq@3.109.8.178"
+        // amqp://test:test@ec2-3-20-122-50.us-east-2.compute.amazonaws.com/test8
+      },
+      "runtimeArgs": ["--trace-warnings"],
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!(**/node_modules/**)"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Build React",
+      "program": "${workspaceRoot}/build/client_build.js",
+      "env": {
+        "HEROKU_APP_NAME": "local_machine",
+        "IGNORE_THRONG": "*",
+        "ACCESS_KEY_ID": "AKIAV4FP3A4I2VNGBXQ3",
+        "SECRET_ACCESS_KEY": "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",
+        "REGION": "ap-south-1",
+        "MONGO_USER": "yash",
+        "MONGO_PASSWORD": "kakuyash9988",
+        "DB_NAME": "CS_BackEndApiAdmin",
+        "GOOGLE_CLIENT_ID": "189188116379-vhfqsa0205jjgh41cdm01f9f9n69isb9.apps.googleusercontent.com",
+        "GOOGLE_CLIENT_SECRET": "Vc7cjW1qKxSw_qIgR9UiRTF7",
+        "JWT_SECRET": "yash",
+        "MONGO_URI_PROD": "mongodb+srv://shoshin-test1:shoshin-test1@shoshintest.seuv6.mongodb.net/shoshin-test1?retryWrites=true&w=majority",
+        "MONGO_URI": "mongodb+srv://yash:kakuyash9988@cluster0.qkwlb.mongodb.net/CS_BackEndApiAdmin?retryWrites=true&w=majority",
+        "NODE_ENV": "dev",
+        "CLOUDAMQP_URL": "amqp://shoshinrmq:shoshinrmq@3.109.8.178",
+        "REACT_CLIENT_BRANCH": "feat/client-build",
+        "BUILD_CLIENT": "1",
+        "CLIENT_GITHUB_TOKEN": "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",
+        "AWS_CDN_BUCKET_NAME": "shoshin-cdn",
+        "APPLICATION_BASE_URL": "http://localhost:5000/"
+      },
+      "runtimeArgs": ["--trace-warnings"],
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!(**/node_modules/**)"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Mocha Tests",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "protocol": "inspector",
+      "args": ["--opts", "./mocha.opts"],
+      "env": {
+        "TS_NODE_FILES": "true"
+      },
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Artiller Tests",
+      "preLaunchTask": "node ${workspaceFolder}/tests/artillery/index.js"
+      //   "preLaunchTask": "tsc: build - tsconfig.json",
+    }
+  ]
+}

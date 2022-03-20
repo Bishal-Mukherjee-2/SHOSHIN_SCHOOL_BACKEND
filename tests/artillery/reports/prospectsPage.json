@@ -1,0 +1,268 @@
+{
+  "aggregate": {
+    "counters": {
+      "vusers.created_by_name.getAllviews -> generateProspectViewOptimized -> getHotProspectsById": 35,
+      "vusers.created": 100,
+      "http.requests": 100,
+      "errors.ENOTFOUND": 100,
+      "vusers.failed": 100,
+      "vusers.created_by_name.getConnectedAccountStatus": 36,
+      "vusers.created_by_name.getSequenceList": 29
+    },
+    "histograms": {},
+    "rates": {
+      "http.request_rate": 1
+    },
+    "http.request_rate": null,
+    "firstCounterAt": 1643470856867,
+    "lastCounterAt": 1643470955868,
+    "firstMetricAt": 1643470856867,
+    "lastMetricAt": 1643470955868,
+    "period": 1643470950000,
+    "summaries": {}
+  },
+  "intermediate": [
+    {
+      "counters": {
+        "vusers.created_by_name.getAllviews -> generateProspectViewOptimized -> getHotProspectsById": 2,
+        "vusers.created": 4,
+        "http.requests": 4,
+        "errors.ENOTFOUND": 3,
+        "vusers.failed": 3,
+        "vusers.created_by_name.getConnectedAccountStatus": 1,
+        "vusers.created_by_name.getSequenceList": 1
+      },
+      "histograms": {},
+      "rates": {
+        "http.request_rate": 1
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1643470856867,
+      "lastCounterAt": 1643470859869,
+      "firstMetricAt": 1643470856867,
+      "lastMetricAt": 1643470859869,
+      "period": "1643470850000",
+      "summaries": {}
+    },
+    {
+      "counters": {
+        "errors.ENOTFOUND": 11,
+        "vusers.failed": 11,
+        "vusers.created_by_name.getConnectedAccountStatus": 5,
+        "vusers.created": 10,
+        "http.requests": 10,
+        "vusers.created_by_name.getAllviews -> generateProspectViewOptimized -> getHotProspectsById": 3,
+        "vusers.created_by_name.getSequenceList": 2
+      },
+      "histograms": {},
+      "rates": {
+        "http.request_rate": 1
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1643470860102,
+      "lastCounterAt": 1643470869870,
+      "firstMetricAt": 1643470860102,
+      "lastMetricAt": 1643470869870,
+      "period": "1643470860000",
+      "summaries": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.getSequenceList": 4,
+        "vusers.created": 10,
+        "http.requests": 10,
+        "errors.ENOTFOUND": 10,
+        "vusers.failed": 10,
+        "vusers.created_by_name.getSequenceList": 3,
+        "vusers.created_by_name.getAllviews -> generateProspectViewOptimized -> getHotProspectsById": 3
+      },
+      "histograms": {},
+      "rates": {
+        "http.request_rate": 1
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1643470870866,
+      "lastCounterAt": 1643470879869,
+      "firstMetricAt": 1643470870866,
+      "lastMetricAt": 1643470879869,
+      "period": "1643470870000",
+      "summaries": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.getSequenceList": 4,
+        "vusers.created": 10,
+        "http.requests": 10,
+        "errors.ENOTFOUND": 10,
+        "vusers.failed": 10,
+        "vusers.created_by_name.getConnectedAccountStatus": 5,
+        "vusers.created_by_name.getAllviews -> generateProspectViewOptimized -> getHotProspectsById": 1
+      },
+      "histograms": {},
+      "rates": {
+        "http.request_rate": 1
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1643470880865,
+      "lastCounterAt": 1643470889870,
+      "firstMetricAt": 1643470880865,
+      "lastMetricAt": 1643470889870,
+      "period": "1643470880000",
+      "summaries": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.getAllviews -> generateProspectViewOptimized -> getHotProspectsById": 6,
+        "vusers.created": 10,
+        "http.requests": 10,
+        "errors.ENOTFOUND": 10,
+        "vusers.failed": 10,
+        "vusers.created_by_name.getSequenceList": 3,
+        "vusers.created_by_name.getConnectedAccountStatus": 1
+      },
+      "histograms": {},
+      "rates": {
+        "http.request_rate": 1
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1643470890865,
+      "lastCounterAt": 1643470899869,
+      "firstMetricAt": 1643470890865,
+      "lastMetricAt": 1643470899869,
+      "period": "1643470890000",
+      "summaries": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.getAllviews -> generateProspectViewOptimized -> getHotProspectsById": 5,
+        "vusers.created": 10,
+        "http.requests": 10,
+        "errors.ENOTFOUND": 10,
+        "vusers.failed": 10,
+        "vusers.created_by_name.getSequenceList": 3,
+        "vusers.created_by_name.getConnectedAccountStatus": 2
+      },
+      "histograms": {},
+      "rates": {
+        "http.request_rate": 1
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1643470900865,
+      "lastCounterAt": 1643470909868,
+      "firstMetricAt": 1643470900865,
+      "lastMetricAt": 1643470909868,
+      "period": "1643470900000",
+      "summaries": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.getSequenceList": 2,
+        "vusers.created": 10,
+        "http.requests": 10,
+        "errors.ENOTFOUND": 10,
+        "vusers.failed": 10,
+        "vusers.created_by_name.getConnectedAccountStatus": 4,
+        "vusers.created_by_name.getAllviews -> generateProspectViewOptimized -> getHotProspectsById": 4
+      },
+      "histograms": {},
+      "rates": {
+        "http.request_rate": 1
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1643470910864,
+      "lastCounterAt": 1643470919868,
+      "firstMetricAt": 1643470910864,
+      "lastMetricAt": 1643470919868,
+      "period": "1643470910000",
+      "summaries": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.getSequenceList": 5,
+        "vusers.created": 10,
+        "http.requests": 10,
+        "errors.ENOTFOUND": 10,
+        "vusers.failed": 10,
+        "vusers.created_by_name.getConnectedAccountStatus": 3,
+        "vusers.created_by_name.getAllviews -> generateProspectViewOptimized -> getHotProspectsById": 2
+      },
+      "histograms": {},
+      "rates": {
+        "http.request_rate": 1
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1643470920864,
+      "lastCounterAt": 1643470929869,
+      "firstMetricAt": 1643470920864,
+      "lastMetricAt": 1643470929869,
+      "period": "1643470920000",
+      "summaries": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.getAllviews -> generateProspectViewOptimized -> getHotProspectsById": 2,
+        "vusers.created": 10,
+        "http.requests": 10,
+        "errors.ENOTFOUND": 10,
+        "vusers.failed": 10,
+        "vusers.created_by_name.getConnectedAccountStatus": 4,
+        "vusers.created_by_name.getSequenceList": 4
+      },
+      "histograms": {},
+      "rates": {
+        "http.request_rate": 1
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1643470930863,
+      "lastCounterAt": 1643470939868,
+      "firstMetricAt": 1643470930863,
+      "lastMetricAt": 1643470939868,
+      "period": "1643470930000",
+      "summaries": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.getConnectedAccountStatus": 3,
+        "vusers.created": 10,
+        "http.requests": 10,
+        "errors.ENOTFOUND": 10,
+        "vusers.failed": 10,
+        "vusers.created_by_name.getSequenceList": 1,
+        "vusers.created_by_name.getAllviews -> generateProspectViewOptimized -> getHotProspectsById": 6
+      },
+      "histograms": {},
+      "rates": {
+        "http.request_rate": 1
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1643470940863,
+      "lastCounterAt": 1643470949867,
+      "firstMetricAt": 1643470940863,
+      "lastMetricAt": 1643470949867,
+      "period": "1643470940000",
+      "summaries": {}
+    },
+    {
+      "counters": {
+        "vusers.created_by_name.getSequenceList": 1,
+        "vusers.created": 6,
+        "http.requests": 6,
+        "errors.ENOTFOUND": 6,
+        "vusers.failed": 6,
+        "vusers.created_by_name.getConnectedAccountStatus": 4,
+        "vusers.created_by_name.getAllviews -> generateProspectViewOptimized -> getHotProspectsById": 1
+      },
+      "histograms": {},
+      "rates": {
+        "http.request_rate": 1
+      },
+      "http.request_rate": null,
+      "firstCounterAt": 1643470950863,
+      "lastCounterAt": 1643470955868,
+      "firstMetricAt": 1643470950863,
+      "lastMetricAt": 1643470955868,
+      "period": "1643470950000",
+      "summaries": {}
+    }
+  ]
+}

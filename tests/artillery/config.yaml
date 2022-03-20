@@ -1,0 +1,22 @@
+config:
+  target: "http://3.88.57.13"
+  #target: "http://localhost:8080/api"
+  #processor: "./generalProcessor.js"
+  phases:
+    - duration: 100
+      arrivalRate: 80
+      # rampTo: 10
+      name: "BaseURL"
+    # - duration: 20
+    #   arrivalRate: 5
+    #   name: "Constant Load"
+  defaults:
+    headers:
+      #Cookie: "connect.sid={{ $processEnvironment.SESSION_ID }}; _csrf=007;"
+      # Cookie: "_ga=GA1.2.1112641952.1638346481; _gid=GA1.2.2071450647.1638346481; _BEAMER_USER_ID_uHbjDrhU23697=67943fc3-2b3b-4488-842e-5c356f545251; _BEAMER_FIRST_VISIT_uHbjDrhU23697=2021-12-01T08:19:24.015Z; connect.sid=s%3A09vxEwJv0rk-UHAUoYPbBWANA9z-bkeC.xzzRviAUzhBVwgIpbIanySgudrPqsWWGwb9HTPKTkMA; _BEAMER_FILTER_BY_URL_uHbjDrhU23697=false"
+      # X-XSRF-TOKEN: "QyqHkzU2-rKRbrn2SVfC0x2aNdKRiSr_XGuA"
+  timeout: 600
+  ensure:
+    maxErrorRate: 1
+  plugins:
+    metrics-by-endpoint: {}

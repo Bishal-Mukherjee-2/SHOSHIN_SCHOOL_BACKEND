@@ -1,0 +1,47 @@
+scenarios:
+  - name: "getConnectedAccountStatus"
+    weight: 1
+    flow:
+      - get:
+          url: "/userpreferences/getConnectedAccountStatus"
+
+  - name: "getSequenceList"
+    weight: 1
+    flow:
+      - get:
+          url: "/cadences/getSequenceList"
+
+  - name: "getAllviews -> generateProspectViewOptimized -> getHotProspectsById"
+    weight: 1
+    flow:
+      - get:
+          url: "/userpreferences/getAllviews"
+          beforeRequest: "myBeforeRequestHandler"
+      - post:
+          url: "/prospects/generateProspectViewOptimized"
+          beforeRequest: "myBeforeRequestHandler"
+          json:
+            limit: 10
+            page: 1
+            prevPage: 1
+            dashBoardStatus: ALL
+            useOptimizedViewLoader: true
+            chips:
+              ownedBy:
+                - josh_7@gmail.com
+            searchText: ""
+      - post:
+          url: "/prospects/getHotProspectsById"
+          beforeRequest: "myBeforeRequestHandler"
+          json:
+            prospectIds:
+              - 615af0e091878e001423be60
+              - 614306c5f6b2b60014a1725c
+              - 614306c5f6b2b60014a1725a
+              - 614306c5f6b2b60014a17258
+              - 614306c5f6b2b60014a17256
+              - 614306c5f6b2b60014a17254
+              - 614306c5f6b2b60014a17252
+              - 614306c5f6b2b60014a17250
+              - 614306c5f6b2b60014a1724e
+              - 614306c5f6b2b60014a1724c

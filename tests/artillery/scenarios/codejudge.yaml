@@ -1,0 +1,36 @@
+scenarios:
+  - name: "code judge submission"
+    weight: 1
+    flow:
+      - post:
+          url: "/submissions"
+          beforeRequest: "myBeforeRequestHandler"
+          json:
+          language_id: 48
+          source_code: "#include<stdio.h>\nint main()\n{\n printf(\"Hello World\");\n return 0;\n}"
+  # enableMFA: false
+  # otpEmailId: null
+  # - get:
+  #     url: "/mfa"
+  #     auth:
+  #       user: "yash@gmail.com"
+  #       pass: "123"
+  #     headers:
+  #       Cookie: "connect.sid=s%3AYj95AYYmPG9VM5uRRL5SZ7HTHh_l-eDK.I7VA1xa0ilP2iIgsyhxDnAom5hnFc9bWkInFGeIWxFI;"
+  #       X-XSRF-TOKEN: "buyKgPrr-bbRMSGST-flVEWQnf7NnwJ2o1gM;"
+  #     beforeRequest: "myBeforeRequestHandler"
+  # - post:
+  #     url: "/prospects/getHotProspectsById"
+  #     beforeRequest: "myBeforeRequestHandler"
+  #     json:
+  #       prospectIds:
+  #         - 614306c5f6b2b60014a17250
+  #         - 614306c5f6b2b60014a17252
+  #         - 614306c5f6b2b60014a17256k
+  #         - 614306c5f6b2b60014a17254
+  #         - 614306c5f6b2b60014a17258
+  #         - 614306c5f6b2b60014a1725a
+  #         - 614306c5f6b2b60014a1724e
+  #         - 614306c5f6b2b60014a1724c
+  #         - 614306c5f6b2b60014a1724a
+  #         - 614306c5f6b2b60014a17250
