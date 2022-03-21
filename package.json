@@ -5,7 +5,7 @@
   "main": "src/server.ts",
   "scripts": {
     "test": "./node_modules/.bin/_mocha",
-    "build": "tsc",
+    "build": "node ./build/client_build.js && tsc",
     "build:w": "tsc -w",
     "start": "node dist/server.js",
     "start-artillery": "node tests/artillery/index.js"
