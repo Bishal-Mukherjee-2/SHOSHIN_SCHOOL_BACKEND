@@ -48,7 +48,7 @@ function buildReactClient() {
     exec('echo "' + ENV_FILE_CONTENT + '" > .env.production', "tmp");
 
     exec("npm install", "tmp");
-    exec("npm run build", "tmp");
+    exec("npm run build");
     // exec("npm run build-upload", "tmp");
 
     moveFiles();
