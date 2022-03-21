@@ -8,9 +8,9 @@ const moveFiles = () => {
 
   console.log("Moving files to react_client");
 
-  moveToClient("tmp/build/static");
-  moveToClient("tmp/build/asset-manifest.json");
-  moveToClient("tmp/build/index.html");
+//   moveToClient("tmp/build/static");
+//   moveToClient("tmp/build/asset-manifest.json");
+//   moveToClient("tmp/build/index.html");
   //   moveToClient("tmp/build/logo.png");
   moveToClient("tmp/.env.*");
   if (fs.existsSync("./tmp/.profile")) {
@@ -48,7 +48,7 @@ function buildReactClient() {
     exec('echo "' + ENV_FILE_CONTENT + '" > .env.production', "tmp");
 
     exec("npm install", "tmp");
-    exec("npm run build");
+    exec("npm run build", "tmp");
     // exec("npm run build-upload", "tmp");
 
     moveFiles();
