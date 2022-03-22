@@ -49,8 +49,8 @@ function buildReactClient() {
 
     exec("npm install", "tmp");
 	console.log("_______________npm install completed_________________")
-    exec("npm run build", "tmp");
-    // exec("npm run build-upload", "tmp");
+    // exec("npm run build", "tmp");
+    exec("npm run build-upload", "tmp");
 
     moveFiles();
 
