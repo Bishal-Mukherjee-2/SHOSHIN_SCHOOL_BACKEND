@@ -52,7 +52,7 @@ function buildReactClient() {
     exec("npm run build", "tmp");
     // exec("npm run build-upload", "tmp");
 
-    // moveFiles();
+    moveFiles();
 
     exec("rm -rf tmp");
     console.log("[Client v2] Client build completed");
