@@ -39,7 +39,7 @@ function buildReactClient() {
     exec("cd tmp");
     exec("ls");
     console.log("viewing tmp folder contents");
-    exec("cd tmp");
+    exec("cd tmp/tmp");
     exec("ls");
     // exec("cd tmp");
     // exec("ls");
