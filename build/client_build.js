@@ -37,8 +37,8 @@ function buildReactClient() {
       `git clone https://${process.env.CLIENT_GITHUB_TOKEN}@github.com/shoshinschool/Shoshin-Client-App-New.git --single-branch --branch ${clientBranch} tmp`
     );
     exec("ls");
-    exec("cd tmp");
-    exec("ls");
+    // exec("cd tmp");
+    // exec("ls");
     // exec("mkdir -p react_client");
 
     // exec("touch .env.development .env.test .env.production", "tmp");
