@@ -38,8 +38,8 @@ function buildReactClient() {
     );
     exec("cd tmp");
     exec("ls");
-    console.log("viewing tmp folder contents");
-    exec("cd tmp/tmp");
+    console.log("viewing tmp -> build folder contents");
+    exec("cd build");
     exec("ls");
     ///
     // exec("cd tmp");
