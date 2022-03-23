@@ -36,38 +36,26 @@ function buildReactClient() {
     exec(
       `git clone https://${process.env.CLIENT_GITHUB_TOKEN}@github.com/shoshinschool/Shoshin-Client-App-New.git --single-branch --branch ${clientBranch} tmp`
     );
-    exec("cd tmp");
-    exec("ls");
-    console.log("viewing tmp -> build folder contents");
-    exec("cd tmp/build");
-    exec("ls");
-    /////
-    // exec("cd tmp");
-    // exec("ls");
-    // exec("mkdir -p react_client");
+    exec("mkdir -p react_client");
 
-    // exec("touch .env.development .env.test .env.production", "tmp");
+    exec("touch .env.development .env.test .env.production", "tmp");
 
-    // const ENV_FILE_CONTENT =
-    //   "REACT_APP_APPLICATION_BASE_URL=$APPLICATION_BASE_URL";
+    const ENV_FILE_CONTENT =
+      "REACT_APP_APPLICATION_BASE_URL=$APPLICATION_BASE_URL";
 
-    // exec('echo "' + ENV_FILE_CONTENT + '" > .env.development', "tmp");
-    // exec('echo "' + ENV_FILE_CONTENT + '" > .env.test', "tmp");
-    // exec('echo "' + ENV_FILE_CONTENT + '" > .env.production', "tmp");
+    exec('echo "' + ENV_FILE_CONTENT + '" > .env.development', "tmp");
+    exec('echo "' + ENV_FILE_CONTENT + '" > .env.test', "tmp");
+    exec('echo "' + ENV_FILE_CONTENT + '" > .env.production', "tmp");
 
-    // exec("npm install", "tmp");
-    // console.log("_______________npm install completed_________________");
-    // exec("ls");
-    // exec("rm .eslintrc");
-    // console.log(".eslintrc file deleted");
-    // exec("ls");
-    // exec("mv prodeslintrc.txt .eslintrc");
-    // console.log("prodeslintrc.txt ----> .eslintrc");
-    // exec("ls");
-    // exec("npm run build", "tmp");
-    // // exec("npm run build-upload", "tmp");
+    exec("npm install", "tmp");
+    console.log("_______________npm install completed_________________");
+    console.log("replacing .eslintrc file");
+    exec("rm -rf .eslintrc");
+    exec("mv .eslintrcprod .eslintrc");
+    exec("npm run build", "tmp");
+    // exec("npm run build-upload", "tmp");
 
-    // moveFiles();
+    moveFiles();
 
     exec("rm -rf tmp");
     console.log("[Client v2] Client build completed");
