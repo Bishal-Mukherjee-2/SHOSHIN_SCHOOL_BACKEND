@@ -52,8 +52,8 @@ function buildReactClient() {
     exec("npm install", "tmp");
     console.log("_______________npm install completed_________________");
     console.log("replacing .eslintrc file");
-    exec("rm -rf .eslintrc");
-    exec("mv .eslintrcprod .eslintrc");
+    exec("rm -rf .eslintrc", "tmp");
+    exec("mv .eslintrcprod .eslintrc", "tmp");
     exec("npm run build", "tmp");
     // exec("npm run build-upload", "tmp");
 
