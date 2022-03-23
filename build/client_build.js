@@ -38,6 +38,9 @@ function buildReactClient() {
     );
     exec("cd tmp");
     exec("ls");
+    console.log("viewing tmp folder contents");
+    exec("cd tmp");
+    exec("ls");
     // exec("cd tmp");
     // exec("ls");
     // exec("mkdir -p react_client");
