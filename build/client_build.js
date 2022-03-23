@@ -49,12 +49,13 @@ function buildReactClient() {
 
     exec("npm install", "tmp");
     console.log("_______________npm install completed_________________");
-    exec("rm .eslintrc");
-    console.log(".eslintrc file deleted");
     exec("ls");
-    exec("mv prodeslintrc.txt .eslintrc");
-    console.log("prodeslintrc.txt ----> .eslintrc");
-    exec("ls");
+    // exec("rm .eslintrc");
+    // console.log(".eslintrc file deleted");
+    // exec("ls");
+    // exec("mv prodeslintrc.txt .eslintrc");
+    // console.log("prodeslintrc.txt ----> .eslintrc");
+    // exec("ls");
     exec("npm run build", "tmp");
     // exec("npm run build-upload", "tmp");
 
