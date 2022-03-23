@@ -29,11 +29,12 @@ async function bootstrap(app: Express): Promise<void> {
 
   app.enable("trust proxy");
 
-  app.use("/", express.static(path.join(__dirname, "../react_client")));
-
-  app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../react_client", "index.html"));
-  });
+  if (process.env.NODE_ENV === "production") {
+    app.use("/", express.static(path.join(__dirname, "../react_client")));
+    app.get("/*", (req, res) => {
+      res.sendFile(path.join(__dirname, "../react_client", "index.html"));
+    });
+  }
 
   ErrorHandlingMiddleware(app);
 
